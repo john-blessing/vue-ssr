@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "vue-ssr",
+            "script": "npm",
+            "args" : "start"
+        }
+    ]
+}
