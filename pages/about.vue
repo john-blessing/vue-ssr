@@ -1,27 +1,29 @@
 <template>
-    <h1 class="h1">hello world</h1>
+  <div>
+    关于
+    <button @click="handleClick"></button>
+  </div>
 </template>
 <script>
 export default {
   head() {
     return {
-      title: "详情",
+      title: "关于",
       meta: [
         {
           name: "keywords",
           content: "主站,北京"
         }
       ]
-    };
+    }
   },
-  validate({ params }) {
-    console.log(params);
-    return params;
+  methods: {
+    handleClick() {
+      window.location.href = '/'
+    }
   }
-};
+}
 </script>
 <style lang="stylus" scoped>
-.h1 {
-  color blue
-}
+
 </style>
