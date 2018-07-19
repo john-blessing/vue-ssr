@@ -118,6 +118,8 @@ $r20 = 1.25rem;
 $r28 = 1.75rem;
 $r18 = 1.125rem;
 $r25 = 1.5625rem;
+$r40 = 2.5rem;
+$r12 = 0.75rem;
 // pxTorem function
 // pxTorem($px) {
 //   return $px / $default-font-size * 1rem;
@@ -304,7 +306,7 @@ html {
   }
 
   .gk-detail-item {
-    padding: $r12p;
+    padding: $r12;
     background: #F5F5F5;
     margin-bottom: $r12;
     font-size: $r16;
