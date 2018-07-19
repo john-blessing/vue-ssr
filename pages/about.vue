@@ -1,7 +1,7 @@
 <template>
   <div>
     关于
-    <button @click="handleClick"></button>
+    <button @click="handleClick">返回首页</button>
   </div>
 </template>
 <script>
