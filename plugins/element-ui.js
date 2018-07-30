@@ -1,7 +1,4 @@
 import Vue from 'vue'
-import { Message, Notification } from 'element-ui'
-import 'element-ui/lib/theme-chalk/message.css'
-import 'element-ui/lib/theme-chalk/notification.css'
+import Notification from './notification/message'
 
-Vue.prototype.$message = Message
-Vue.prototype.$notify = Notification
+Vue.prototype.$Message = Notification

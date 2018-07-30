@@ -14,7 +14,7 @@
         <div id="verify-base">
           <div class="gk-yc-input">
             <input id="input-value" type="text" placeholder="请输入10位卡号">
-            <button id="enter">确认</button>
+            <button id="enter" @click="hoverMessage">确认</button>
           </div>
           <p class="text-center gk-detail-title">验证领增值资料</p>
           <div class="gk-detail-item">
@@ -54,7 +54,7 @@
             </div>
             <div class="btn-bar">
               <button style="display:none" class="ghost btn" onclick="reVerify()">重新验证</button>
-              <button class="primary btn" onclick="reVerify()">知道了</button>
+              <button class="primary btn" @click="hoverMessage">知道了</button>
             </div>
           </div>
         </div>
@@ -96,10 +96,7 @@ export default {
       this.setNewTitle("学格科技");
     },
     hoverMessage() {
-      this.$notify({
-        title: "提示",
-        message: "这条信息"
-      });
+      this.$Message.message("hello world")
     }
   }
 };

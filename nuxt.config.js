@@ -36,6 +36,7 @@ module.exports = {
   */
   dev: process.env.NODE_ENV !== 'production',
   build: {
+    publicPath: 'https://cdn.nuxtjs.org',
     /*
     ** Run ESLint on save
     */
