@@ -27,6 +27,9 @@ module.exports = {
     proxy: true
     // See https://github.com/nuxt-community/axios-module#options
   },
+  css: [
+    '~/assets/common.styl'
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -36,7 +39,11 @@ module.exports = {
   */
   dev: process.env.NODE_ENV !== 'production',
   build: {
-    publicPath: 'https://cdn.nuxtjs.org',
+    /**
+     * 替换成cdn地址
+     */
+    publicPath: '/',
+    vendor: ['~/plugins/flexible'],
     /*
     ** Run ESLint on save
     */
